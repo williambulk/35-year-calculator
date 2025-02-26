@@ -24,7 +24,7 @@ function thirty_five_year_calculator() { ?>
 
     <div class="thirty-five-year-calculator">
         <h1>35-Year Mortgage Calculator</h1>
-        <p>Use the calculator below to estimate a monthly payment amount for a 35-Year mortgage:</p>
+        <p>Estimate Your Monthly Payment for a 35-Year Mortgage:</p>
         <form>
             <div class="mortgage">
                 <label><strong>Mortgage Amount ($):</strong></label>
