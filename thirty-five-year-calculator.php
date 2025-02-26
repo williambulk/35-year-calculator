@@ -27,22 +27,22 @@ function thirty_five_year_calculator() { ?>
         <p>Use the calculator below to estimate a monthly payment amount for a 35-Year mortgage:</p>
         <form>
             <div class="mortgage">
-                <label>Mortgage Amount ($):</label>
+                <label><strong>Mortgage Amount ($):</strong></label>
                 <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" placeholder="$CAD" required>
             </div>
 
             <div class="down-payment">
-                <label>Down Payment ($):</label>
+                <label><strong>Down Payment ($):</strong></label>
                 <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" placeholder="$CAD" required>
             </div>
 
             <div class="interest">
-                <label>Interest Rate (%):</label>
+                <label><strong>Interest Rate (%):</strong></label>
                 <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" placeholder="E.g. 3.5%" required>
             </div>
 
             <div class="loan-term">
-                <label>Select Length of Term:</label>
+                <label><strong>Select Length of Term:</strong></label>
                 <select class="loanTerm" required>
                     <option value="15">15 years</option>
                     <option value="20">20 years</option>
@@ -52,10 +52,12 @@ function thirty_five_year_calculator() { ?>
                 </select>
             </div>
 
-            <div class="35-year-estimate"></div>
+            <button type="button" class="thirty-five-year-submit-button">Calculate</button>
+
+            <div class="thirty-five-year-estimate"></div>
         </form>
-        
-        <p>Based on a fully amortized fixed rate loan. Ask your agent for the tax rates in your area. Insurance estimate is based on an average cost, your final premium cost will be determined by the type of coverage you select. This program only provides an estimate.</p>
+
+        <p class="disclaimer">Based on a fully amortized fixed rate loan. Ask your agent for the tax rates in your area. Insurance estimate is based on an average cost, your final premium cost will be determined by the type of coverage you select. This program only provides an estimate.</p>
     </div>
 
     <?php return ob_get_clean();
