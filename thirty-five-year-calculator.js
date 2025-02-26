@@ -58,10 +58,10 @@ document.addEventListener("DOMContentLoaded", function () {
       let totalInterest = totalPayment - loanAmount;
 
       let result = `
-        Monthly Payment: ${monthlyPayment.toLocaleString("en-CA", {
+        <strong>Monthly Payment: ${monthlyPayment.toLocaleString("en-CA", {
           style: "currency",
           currency: "CAD",
-        })} <br>
+        })}</strong> <br>
         Total Payment: ${totalPayment.toLocaleString("en-CA", {
           style: "currency",
           currency: "CAD",
